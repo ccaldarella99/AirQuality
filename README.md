@@ -17,7 +17,7 @@
 ## Problem Statement
 [back to top](#Project-5)
 
-We plan to explore the relationship between certain pollutants that are more likely to cause dangerously high air quality scores. We will be doing this using information based on EPA data from Cleveland, OH.
+We plan to explore the relationship between certain pollutants that are more likely to cause dangerously high air quality scores. We will be doing this using information based on EPA data from Cleveland, OH and presenting this to residents of Cleveland, OH.
 
 
 ## Executive Summary
@@ -78,13 +78,29 @@ We plan to explore the relationship between certain pollutants that are more lik
 ## Data Dictionary
 [back to top](#Project-5)
 
- - *Example:*
-| Feature | Python Type | Data Type  | Descritpion   |
-| ---     | ---         | ---        | ---           |
-| ID      | int64       | Discrete   | Identifier    |
-| Name    | Object      | Nominal    | Is a name     |
-| Rating  | int64       | Ordinal    | Rating (1-10) |
-| Value   | float64     | Continuous | Is an amount  |
+| Feature            | Python Type | Data Type  | Descritpion   |
+| ---                | ---         | ---        | ---           |
+| date (index)       | datetime    | Continuous | Date when observations were made  |
+| high_temp          |   int64     | Continuous | Highest Temperature measured for the day (in degrees Fahrenheit) |
+| low_temp           |   int64     | Continuous | Lowest Temperature measured for the day (in degrees Fahrenheit) |
+| co_max             | float64     | Continuous | Amount of Carbon Monoxide measured in ppm |
+| co_aqi_val         | float64     | Continuous | AQI value of Carbon Monoxide |
+| no2_max            | float64     | Continuous | Amount of Nitrogen Dioxide measured in ppb |
+| no2_aqi_val        | float64     | Continuous | AQI value of Nitrogen Dioxide |
+| ozone_max          | float64     | Continuous | Amount of Ozone measured in ppm |
+| ozone_aqi_val      | float64     | Continuous | AQI value of Ozone |
+| pm10_mean          | float64     | Continuous | Average amount of 10um Particulate Matter measured in ug/m^3 |
+| pm10_aqi_val       | float64     | Continuous | AQI value of 10um Particulate Matter |
+| pm2.5_mean         | float64     | Continuous | Average amount of 2.5um Particulate Matter measured in ug/m^3 |
+| pm2.5_aqi_val      | float64     | Continuous | AQI value of 2.5um Particulate Matter |
+| so2_max            | float64     | Continuous | Amount of Sulfur Dioxide measured in ppb |
+| so2_aqi_val        | float64     | Continuous | AQI value of Sulfur Dioxide |
+| cumulitive_aqi     | float64     | Continuous | Calculated AQI for the day by taking the maximum value from all pollutants |
+| pct_change_aqi     | float64     | Continuous | Percent changed in AQI from previous day |
+| average_daily_temp | float64     | Continuous | Calculated Average Temperature (in degrees Fahrenheit; Mean of Highest and Lowest Temperatures) |
+| month              | float64     | Nominal    | Month denoted by numeric value one through twelve |
+| weekday            | float64     | Nominal    | Day of the week, assuming the week starts on Monday, which is denoted by 0 and ends on Sunday which is denoted by 6 |
+
 
 
 
@@ -101,6 +117,9 @@ We plan to explore the relationship between certain pollutants that are more lik
 
 https://www.epa.gov/outdoor-air-quality-data/download-daily-data
 https://www.cleveland.com/datacentral/2008/09/cleveland_weather_history_find.html
+https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf
+https://www.epa.state.oh.us/portals/27/ams/plans/NCORE-GTCraig.pdf
+
 
 ## Visualizations
 [back to top](#Project-5)
