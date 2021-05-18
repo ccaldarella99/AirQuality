@@ -89,9 +89,9 @@ We plan to explore the relationship between certain pollutants that are more lik
 | no2_aqi_val        | float64     | Continuous | AQI value of Nitrogen Dioxide |
 | ozone_max          | float64     | Continuous | Amount of Ozone measured in ppm |
 | ozone_aqi_val      | float64     | Continuous | AQI value of Ozone |
-| pm10_mean          | float64     | Continuous | Average amount of 10um Particulate Matter measured in ug/m^3 |
+| pm10_mean          | float64     | Continuous | Average amount of 10um Particulate Matter measured in ug/m<sup>3</sup> |
 | pm10_aqi_val       | float64     | Continuous | AQI value of 10um Particulate Matter |
-| pm2.5_mean         | float64     | Continuous | Average amount of 2.5um Particulate Matter measured in ug/m^3 |
+| pm2.5_mean         | float64     | Continuous | Average amount of 2.5um Particulate Matter measured in ug/m<sup>3</sup> |
 | pm2.5_aqi_val      | float64     | Continuous | AQI value of 2.5um Particulate Matter |
 | so2_max            | float64     | Continuous | Amount of Sulfur Dioxide measured in ppb |
 | so2_aqi_val        | float64     | Continuous | AQI value of Sulfur Dioxide |
