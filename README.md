@@ -17,11 +17,8 @@
 ## Problem Statement
 [back to top](#Project-5)
 
-<<<<<<< HEAD
 We plan to explore the relationship between daily pollutant values and daily temperature readings with overall air quality scores. We will base our model on EPA pollutant data and daily temperature reading in Cleveland, OH from 2017-2019. Our goal is to create an application to help accurately predict a daily air quality index for the residents of Cleveland, OH with the hopes of giving guidance for residents suffering from respiratory illnesses.
-=======
-We plan to explore the relationship between certain pollutants that are more likely to cause dangerously high air quality scores. We will be doing this using information based on EPA data from Cleveland, OH and presenting this to residents of Cleveland, OH.
->>>>>>> master
+
 
 
 ## Executive Summary
