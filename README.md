@@ -34,14 +34,19 @@ We plan to explore the relationship between daily pollutant values and daily tem
 
 ## File Directory
 [back to top](#Project-5)
-### *Files should be clearly labeled with descriptive names*
+
 05-Project<br />
 |<br />
 |__ code<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 00_table_of_contents.ipynb <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 01_eda_and_cleaning.ipynb <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 02_technical_analysis.ipynb <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 03_conclusion.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 01_cleaning.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 02_eda.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 03_eda_visualizations.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 04_modelling_with_regression.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 05_modelling_with_time_series.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 06_production_model.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 07_streamlit_app.ipynb <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 08_conclusion.ipynb <br />
 |<br />
 |__ data <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_CO.csv <br />
@@ -51,13 +56,23 @@ We plan to explore the relationship between daily pollutant values and daily tem
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_PM10.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_PM2.5.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_SO2.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_CO.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_NO2.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_O3.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_Pb.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_PM10.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_PM2.5.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_clean_cleveland_oh_SO2.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2018_all_cleveland_oh_CO.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2018_all_cleveland_oh_NO2.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2018_all_cleveland_oh_O3.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2018_all_cleveland_oh_PM10.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2018_all_cleveland_oh_PM2.5.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2018_all_cleveland_oh_SO2.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_CO.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_NO2.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_O3.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_PM10.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_PM2.5.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_SO2.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 20210517_aqi_and_temp.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ ClevelandOHweather2017.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ ClevelandOHweather2018.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ ClevelandOHweather2019.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ combo_df.csv <br />
 |<br />
 |__ images <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ nothing.png <br />
