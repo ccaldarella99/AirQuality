@@ -68,7 +68,7 @@ We plan to explore the relationship between daily pollutant values and daily tem
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_PM10.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_PM2.5.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2019_all_cleveland_oh_SO2.csv <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ 20210517_aqi_and_temp.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ cleaned_aqi_and_temp_data_2017-2019.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ ClevelandOHweather2017.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ ClevelandOHweather2018.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ ClevelandOHweather2019.csv <br />
@@ -82,13 +82,18 @@ We plan to explore the relationship between daily pollutant values and daily tem
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ presentation.pptx <br />
 |<br />
 |__ README.md <br />
+|__ LICENSE <br />
 
 
 ## Data
 [back to top](#Project-5)
- - *Write a sentence or two about the source of your data. If you are not including your data in the repo share a link to your data source.*
- - *Include all features in your final cleaned csv/file*
- - *Include engineered features*
+
+Data about pollution and AQI values per pollutant were pulled from the [Download Daily Data](https://www.epa.gov/outdoor-air-quality-data/download-daily-data) section of the [EPA website](https://www.epa.gov/). All data was observed at the George T. Craig National Core (NCore) Monitoring Station in Cleveland, Ohio during 2017, 2018, and 2019.
+
+Temperature data about Cleveland, Ohio was taken from the [Cleveland.com website](https://www.cleveland.com/datacentral/2008/09/cleveland_weather_history_find.html).
+
+*(Please see the __[Sources](#Sources)__ section below for all of the sources we used to make informed decisions about using this data.)*
+
 
 
 ## Data Dictionary
@@ -131,10 +136,11 @@ We plan to explore the relationship between daily pollutant values and daily tem
 ## Sources
 [back to top](#Project-5)
 
-https://www.epa.gov/outdoor-air-quality-data/download-daily-data
-https://www.cleveland.com/datacentral/2008/09/cleveland_weather_history_find.html
-https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf
-https://www.epa.state.oh.us/portals/27/ams/plans/NCORE-GTCraig.pdf
+https://www.epa.gov/outdoor-air-quality-data/download-daily-data <br/>
+https://www.cleveland.com/datacentral/2008/09/cleveland_weather_history_find.html <br/>
+https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf <br/>
+https://www.epa.state.oh.us/portals/27/ams/plans/NCORE-GTCraig.pdf <br/>
+https://www.breeze-technologies.de/blog/what-is-an-air-quality-index-how-is-it-calculated/ <br/>
 
 
 ## Visualizations
