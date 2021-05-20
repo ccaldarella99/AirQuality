@@ -97,7 +97,7 @@ o3_level = st.slider("Input the Ozone Level", 0,100, get_o3)
 
 # with open('saved-aqi-basic-model.pkl', 'rb') as f: 
 #     model = pickle.load(f)
-model = tf.keras.models.load_model('../scratch/models/neural_net_model12.h5')
+model = tf.keras.models.load_model('../models/neural_net_model12.h5')
 
 # user_values = np.array([ temp_level, CO_level, no2_level, pm10_level, pm2_5_level])
 user_values = np.array([ CO_level, no2_level, pm10_level, pm2_5_level, so2_level, o3_level, temp_level, weekday, month ])
