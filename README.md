@@ -77,9 +77,20 @@ We plan to explore the relationship between daily pollutant values and daily tem
 |__ images <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ nothing.png <br />
 |<br />
+|__ models <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ neural_net_model12.h5 <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ neural_net_model12_raw.h5 <br />
+|<br />
 |__ presentation <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ presentation.pdf <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ presentation.pptx <br />
+|<br />
+|__ Streamlit <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ airquality.jpeg <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ app.py <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ app1.py <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ clean_aqi.csv <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ galogo.jpeg <br />
 |<br />
 |__ README.md <br />
 |__ LICENSE <br />
@@ -129,8 +140,22 @@ Temperature data about Cleveland, Ohio was taken from the [Cleveland.com website
 [back to top](#Project-5)
 
 
+
+
 ## Areas for Further Research/Study
 [back to top](#Project-5)
+
+While not perfect, what we have started with has given a solid foundation to improve upon. The Nueral Net model created has the potential to become better with more data, and with the possibility of using data that includes extreme conditions, whether hypothetical or factual. As with many other models, collecting more data to train our model would likely show an improvement, and there is plenty of data to use for this topic, both within the features investigated, as well as looking for new features to incorporate.
+
+With more data, we could circle back and reevaluate the use of other predictive models, such as Regression and Time Sereies models in addition to trying to improve our Nueral Network model. This may even present an opportunity to try fitting some Ensemble models as well.
+
+A constraint we encountered was the limitation of storage and computing power when deploying our model within a Streamlit app to Heroku. As a free online deployment tool, Heroku allowed us to get our app deployed, but with an amount of difficulty that would not be encountered if Hosted with a cloud service like EC2 with Amazon Web Services.
+
+Another way to add more to our research would involve taking pollutant readings from websites and RSS feeds in realtime to help add information to our model, as well as sending it to our Streamlit application for ease of use. This process can even be automated on an EC2 instance with a time-based job-scheduler like cron-job. 
+
+Another possibility would be deploying different models to different users. With the users consent, more data about how well the model predicted could be returned to the backend for future analysis. The user could also give feedback in regard to their enjoyment of the application. 
+
+This project has lots of versatility, and by building a decent foundation with one city, it makes it possible to implement this in other areas of Cleveland, or other parts of Ohio, the United States, or even the world.
 
 
 ## Sources
@@ -145,8 +170,7 @@ https://www.breeze-technologies.de/blog/what-is-an-air-quality-index-how-is-it-c
 
 ## Visualizations
 [back to top](#Project-5)
-- *Any important visualizations*
-- *These can be included in the Executive Summary or Conclusions/Recommendations, or as its own section.*
-- *Use good judgement! Include a few here that really highlight your findings.*
+
+
 
 
