@@ -84,6 +84,7 @@ Therefore, we looked at Linear Regression, Neural Networks, and Tree Regressor M
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ PM_2.5_temp.png <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ pred_vs_test_aqi_2.png <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ pred_vs_test_aqi_neural.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ streamlit_app.png <br />
 |<br />
 |__ models <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ neural_net_model12.h5 <br />
