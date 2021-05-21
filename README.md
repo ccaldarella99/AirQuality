@@ -24,12 +24,14 @@ We plan to explore the relationship between daily pollutant values and daily tem
 ## Executive Summary
 [back to top](#Project-5)
 
-### *This section should include:*
- - *a brief overview of your process*
- - *models used*
- - *important findings and/or*
- - *metrics, model performance, etc.*
- - *and a brief summary of conclusions and recommendations.*
+Through exploratory analysis of CDC and EPA data we wanted to evaluate a model that could be helpful for analyzing air pollutants with the thought of creating information for people with respiratory illness.
+
+Through our preliminary analysis from CDC data, we investigated cities with high asthma rates. We discovered that Cleveland, Ohio resulted in the highest percentage of adults with asthma in the United States in 2017. Knowing that increasing Air Quality Index (AQI) can negatively impact people with respiratory illensses, we wanted to evaluate the realtionship with air pollutants, temperature, day of the week, and month to see if we could identify any relationship to overall daily air quality data (from the EPA website).
+
+With the hopes to create a predictive AQI model, we experimented with Forecasting Machine Learning Models, but the data was too volatile to predict with this type of model. 
+
+Therefore, we looked at Linear Regression, Neural Networks, and Tree Regressor Models to evaluate important features involved with overall Air Quality Information and to create a Streamlit Application that can relay this to at-risk groups. 
+
 
 
 ## File Directory
@@ -49,6 +51,7 @@ We plan to explore the relationship between daily pollutant values and daily tem
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 08_conclusion.ipynb <br />
 |<br />
 |__ data <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017-2019_aqi_and_temp.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_CO.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_NO2.csv <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ 2017_all_cleveland_oh_O3.csv <br />
@@ -75,7 +78,12 @@ We plan to explore the relationship between daily pollutant values and daily tem
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ combo_df.csv <br />
 |<br />
 |__ images <br />
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ nothing.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ mean_aqi_polut.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ monthly_aqi.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ ozone_and_temp.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ PM_2.5_temp.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ pred_vs_test_aqi_2.png <br />
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ pred_vs_test_aqi_neural.png <br />
 |<br />
 |__ models <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ neural_net_model12.h5 <br />
@@ -139,7 +147,27 @@ Temperature data about Cleveland, Ohio was taken from the [Cleveland.com website
 ## Conclusions and Recommendations
 [back to top](#Project-5)
 
+Through EDA and modelling we were able to identify important features for air quality that impacted overall Air Quality Index (AQI). The features that influenced the AQI the most appeared to be Ozone and PM2.5 (see image below).
 
+![](./images/mean_aqi_polut.png)
+
+We also discovered a relationship with increased temperature and ozone levels, there tends to be increased AQI values as well (see image below).
+
+![](./images/ozone_and_temp.png)
+
+We looked at Forecasting, Regression, and Neural Network models to analyze our data and see which was able to give the best description of our features and observations and possibly predict. 
+
+Forecasting failed to create an accurate predictive model since the daily data is rather volatile, and the Forecasting models generally either performed as well as the baseline or not well at all. 
+
+We explored several Regression Models, but the Decision Tree Regressor performed the best from that category.  The Decision Tree model performed with a R<sup>2</sup> score of 0.7863 and a Root Mean Square Error of 7.1915.
+
+Although Linear Regression and Decision Tree Regressor models performed well, Neural Networks proved to be the best model. The Neural Networks model performed with a R<sup>2</sup> score of 0.8973 and a Root Mean Square Error of 4.9850. The graph below demonstrates how our predicted AQI values align closely with the observed values from our test set.
+
+![](./images/pred_vs_test_aqi_2.png)
+
+Regression and Neural Network models demonstrated relationships among pollutants regarding overall AQI. Across all models it became apparent that PM2.5 and Ozone were major contributors in predicting the overall Air Quality Index.
+
+We recommend that sensitive groups (those with COPD, Asthma, or other respiratory illnesses) should pay special attention to Ozone and PM2.5 levels since they have the highest detriment to overall Air Quality. We also recommend local and state governments to implement stricter anti-pollution measures to accomodate better Air Quality for their citizens.
 
 
 ## Areas for Further Research/Study
@@ -171,6 +199,10 @@ https://www.breeze-technologies.de/blog/what-is-an-air-quality-index-how-is-it-c
 ## Visualizations
 [back to top](#Project-5)
 
-
-
+![](./images/mean_aqi_polut.png)
+![](./images/monthly_aqi.png)
+![](./images/ozone_and_temp.png)
+![](./images/PM_2.5_temp.png)
+![](./images/pred_vs_test_aqi_2.png)
+![](./images/pred_vs_test_aqi_neural.png)
 
