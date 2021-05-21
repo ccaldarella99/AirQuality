@@ -16,6 +16,7 @@ from sklearn.impute import KNNImputer
 from sklearn.preprocessing import StandardScaler
 
 
+
 #image
 from PIL import Image
 img1 = Image.open("galogo.jpeg")
@@ -74,23 +75,6 @@ elif(model_type == 'Neural Network by Value'):
     no2_slider_txt = "Input the Nitrogen Dioxide Level (unit: ppt or ng/L)"
     o3_slider_txt = "Input the Ozone Level (unit: ppb or ug/L)"
 
-
-
-#load data
-
-df = pd.read_csv('clean_aqi.csv')
-#df
-
-show_df = st.checkbox("Click here to view the raw data")
-
-if show_df:
-    df
-
-
-# Images
-from PIL import Image
-img = Image.open("airquality.jpeg")
-st.image(img, width =600)
 
 
 # read data, these values:
@@ -152,6 +136,42 @@ prediction = model.predict(uv_knn.reshape(1,uv_knn.shape[0]))
 
 show_prediction = round(prediction[0][0])
 
-st.header(f'The predicted AQI is: {show_prediction}')
+bg_color = "#64e830"
+rating_text = "(Good)"
+if(show_prediction > 300):
+    bg_color = "#963939"
+    rating_text = "(Hazardous)"
+elif(show_prediction > 200):
+    bg_color = "#c66bc6"
+    rating_text = "(Very Unhealthy)"
+elif(show_prediction > 150):
+    bg_color = "#ff0000"
+    rating_text = "(Unhealthy)"
+elif(show_prediction > 100):
+    bg_color = "#ffb600"
+    rating_text = "(Unhealthy for Sensitive Groups)"
+elif(show_prediction > 50):
+    bg_color = "#f2e124"
+    rating_text = "(Moderate)"
+else:
+    bg_color = "#64e830"
+    rating_text = "(Good)"
+
+# st.header(f'The predicted AQI is: {show_prediction}')
+st.markdown(f'<p style="background-color:{bg_color};font-size:2em;border-radius:2%;padding:5px">The predicted AQI is: {show_prediction}<br />{rating_text}</p>', unsafe_allow_html=True)
+
+
+
+#load data
+df = pd.read_csv('clean_aqi.csv')
+
+show_df = st.checkbox("Click here to view the raw data")
+if show_df:
+    df
+
+# Images
+from PIL import Image
+img = Image.open("airquality.jpeg")
+st.image(img, width =600)
 
 
