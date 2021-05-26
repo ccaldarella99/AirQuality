@@ -114,6 +114,17 @@ Temperature data about Cleveland, Ohio was taken from the [Cleveland.com website
 
 *(Please see the __[Sources](#Sources)__ section below for all of the sources we used to make informed decisions about using this data.)*
 
+### Cleaning the Data
+We cleaned the data after gathering it, which includes six CSV Files with daily pollutant measures, per pollutant, per year (2017 to 2019), as well as three CSV files with High and Low temperatures observed daily for each of the same years (seven files per year). All data was observed in Cleveland, OH.
+
+Looking over tables, we found that "Site Name" GT Craig NCore seems to have the most data. We also noticed that the device used (or "POC") for PM10 and PM2.5 that is labeled "3" has the most data, and all other pollutants have their best "POC" labelled as "1". This what we used for our data set.
+
+After cleaning up one year's worth of data for pollutants, we decided it would be best to get more data; We pulled two more years worth of data in addition to our 2017 data (that is, we added 2018, and 2019 to our data set). Luckily, the best Site and devices ("POC"s) were consistent with the 2017 data.
+
+We wrote and ran a function to "automate" the cleaning process and extract the most useful information. The function then made this data accessible so we could later add it to a single, larger data set.
+
+We then took our cleaned and simplified 2017 data describing pollutants at "GT Craig NCore" and merged it with the temperature data. And since we already had the data for pollutants for 2018 and 2019, we gathered temperature data for those years, imported/cleaned it, and added it all together. This created one simplified DataFrame with our daily Air Quality measurements, Indices, and the Temperature, from 2017 through 2019.
+
 
 
 ## Data Dictionary
